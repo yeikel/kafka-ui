@@ -165,7 +165,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ConnectorOffsetsError'
-
     get:
       tags:
         - KafkaConnectClient
