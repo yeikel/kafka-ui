@@ -9,7 +9,7 @@ updates:
     timezone: Europe/London
   reviewers:
     - "kafbat/backend"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 50
   labels:
     - "type/dependencies"
     - "scope/backend"
