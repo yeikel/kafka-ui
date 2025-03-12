@@ -34,7 +34,7 @@ checkstyle = '10.3.1'
 
 allure = '2.27.0'
 selenide = '7.2.3'
-testng = '7.10.0'
+testng = '7.11.0'
 bonigarcia-webdrivermanager = '5.8.0'
 aspectj = '1.9.21'
 
