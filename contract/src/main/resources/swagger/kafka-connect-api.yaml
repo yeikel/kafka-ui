@@ -165,7 +165,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ConnectorOffsetsError'
-                
+
     get:
       tags:
         - KafkaConnectClient
@@ -479,6 +479,7 @@ components:
             - PAUSED
             - RESTARTING
             - UNASSIGNED
+            - UNKNOWN
         worker_id:
           type: string
         trace:
@@ -509,6 +510,7 @@ components:
                 - UNASSIGNED
                 - RESTARTING
                 - STOPPED
+                - UNKNOWN
             worker_id:
               type: string
             trace:
