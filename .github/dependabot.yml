@@ -33,7 +33,7 @@ updates:
         - "io.confluent:*"
         - "org.apache.kafka:*"
       update-types:
-        - "major" 
+        - "major"
     other-dependencies:
       patterns:
         - "*"
