@@ -27,12 +27,6 @@ updates:
         update-types:
           - "patch"
           - "minor"
-      confluent-major-upgrades:
-        patterns:
-          - "io.confluent:*"
-          - "org.apache.kafka:*"
-        update-types:
-          - "major"
       other-dependencies:
         patterns:
           - "*"
