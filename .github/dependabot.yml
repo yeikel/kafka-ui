@@ -1,6 +1,5 @@
 version: 2
 updates:
-
   - package-ecosystem: gradle
     directory: "/"
     schedule:
@@ -27,19 +26,18 @@ updates:
         update-types:
           - "patch"
           - "minor"
-     confluent-major-upgrade:
+      confluent-major-upgrade:
         patterns:
           - "io.confluent:*"
           - "org.apache.kafka:*"
         update-types:
-          - "major"   
+          - "major"
       other-dependencies:
         patterns:
           - "*"
         update-types:
           - "patch"
           - "minor"
-
   - package-ecosystem: docker
     directory: "/api"
     schedule:
