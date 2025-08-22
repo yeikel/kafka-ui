@@ -20,6 +20,20 @@ updates:
       update-types:
         - "patch"
         - "minor"
+     confluent-minor-patch-dependencies:
+      patterns:
+        - "io.confluent:*"
+        - "org.apache.kafka:*"
+      # We will handle major upgrades manually
+      update-types:
+        - "patch"
+        - "minor" 
+     confluent-major-dependencies:
+      patterns:
+        - "io.confluent:*"
+        - "org.apache.kafka:*"
+      update-types:
+        - "major" 
     other-dependencies:
       patterns:
         - "*"
