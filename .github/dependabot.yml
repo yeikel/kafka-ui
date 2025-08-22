@@ -21,11 +21,11 @@ updates:
         - "patch"
         - "minor"
     other-dependencies:
-      patterns:
-        - "*"
       exclude-patterns:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
+      patterns:
+        - "*"
       update-types:
         - "patch"
         - "minor"
