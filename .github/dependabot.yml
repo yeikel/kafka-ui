@@ -20,15 +20,15 @@ updates:
       update-types:
         - "patch"
         - "minor"
-    #other-dependencies:
-    #  patterns:
-    #    - "*"
-   #   exclude-patterns:
-   #     - "org.springframework.boot:*"
-   #     - "io.spring.dependency-management"
-   #   update-types:
-   #     - "patch"
-   #     - "minor"
+    other-dependencies:
+      patterns:
+        - "*"
+      exclude-patterns:
+        - "org.springframework.boot:*"
+        - "io.spring.dependency-management"
+      update-types:
+        - "patch"
+        - "minor"
 
 - package-ecosystem: docker
   directory: "/api"
