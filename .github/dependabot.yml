@@ -11,6 +11,10 @@ updates:
   labels:
     - "type/dependencies"
     - "scope/backend"
+  ignore:
+  # All netty references are temporary overwrites that must be set carefully
+  # We do not need dependabot to send pull requests
+    - dependency-name: "io.netty:*"
   groups:
     spring-boot-dependencies:
       patterns:
