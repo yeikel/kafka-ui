@@ -1,5 +1,5 @@
 [versions]
-spring-boot = '3.5.5'
+spring-boot = '3.5.6'
 nimbus-jose-jwt = '10.0.2'
 netty = '4.1.125.Final'
 
