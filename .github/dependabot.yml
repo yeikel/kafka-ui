@@ -40,7 +40,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  versioning-strategy: increase-if-necessary
   groups:
     pnpm-dependencies:
       patterns:
