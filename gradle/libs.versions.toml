@@ -3,7 +3,7 @@ spring-boot = '3.5.7'
 nimbus-jose-jwt = '10.0.2'
 
 aws-msk-auth = '2.3.0'
-azure-identity = '1.15.4'
+azure-identity = '1.18.1'
 
 apache-commons-lang3 = '3.18.0'
 apache-commons-text = '1.13.1'
