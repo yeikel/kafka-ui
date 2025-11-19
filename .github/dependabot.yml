@@ -7,9 +7,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  labels:
-    - "type/dependencies"
-    - "scope/backend"
   ignore:
     # Disable dependabot pull requests for Netty
     # In general, our Netty references are temporary overrides, usually applied to address transitive Spring vulnerabilities, and should be configured with caution
@@ -46,9 +43,6 @@ updates:
   ignore:
   - dependency-name: "azul/zulu-openjdk-alpine"
     update-types: ["version-update:semver-major"]
-  labels:
-    - "type/dependencies"
-    - "scope/backend"
 
 - package-ecosystem: npm
   directory: "/frontend"
@@ -57,9 +51,6 @@ updates:
     time: "10:00"
     timezone: Europe/London
   versioning-strategy: increase-if-necessary
-  labels:
-    - "type/dependencies"
-    - "scope/frontend"
   groups:
     pnpm-dependencies:
       patterns:
@@ -74,6 +65,3 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  labels:
-    - "type/dependencies"
-    - "scope/infra"
