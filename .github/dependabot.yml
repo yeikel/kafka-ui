@@ -7,7 +7,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 10
   labels:
     - "type/dependencies"
     - "scope/backend"
@@ -44,7 +43,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 10
   ignore:
   - dependency-name: "azul/zulu-openjdk-alpine"
     update-types: ["version-update:semver-major"]
@@ -58,7 +56,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 10
   versioning-strategy: increase-if-necessary
   labels:
     - "type/dependencies"
@@ -77,7 +74,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 10
   labels:
     - "type/dependencies"
     - "scope/infra"
