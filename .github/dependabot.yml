@@ -34,16 +34,6 @@ updates:
         - "patch"
         - "minor"
 
-- package-ecosystem: docker
-  directory: "/api"
-  schedule:
-    interval: weekly
-    time: "10:00"
-    timezone: Europe/London
-  ignore:
-  - dependency-name: "azul/zulu-openjdk-alpine"
-    update-types: ["version-update:semver-major"]
-
 - package-ecosystem: npm
   directory: "/frontend"
   schedule:
