@@ -2,7 +2,7 @@
 spring-boot = '3.5.7'
 nimbus-jose-jwt = '10.0.2'
 
-aws-msk-auth = '2.3.0'
+aws-msk-auth = '2.3.5'
 azure-identity = '1.15.4'
 
 apache-commons-lang3 = '3.18.0'
