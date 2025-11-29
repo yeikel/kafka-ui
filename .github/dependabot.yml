@@ -37,7 +37,8 @@ updates:
         - "org.mockito:*"
         - "org.junit.jupiter:*"
         - "org.assertj:*"
-        - "com.gorylenko.gradle-git-properties*"
+        - "com.gorylenko.gradle-git-properties"
+        - "com.bmuschko.docker-remote-api"
     openapi-json-dependencies:
       patterns:
         - "org.openapitools:*"
