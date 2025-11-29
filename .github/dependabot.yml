@@ -95,6 +95,9 @@ updates:
       update-types:
         - "patch"
         - "minor"
+    gradle-wrapper:
+      patterns:
+        - "gradle-wrapper"
     # Group all other dependencies we cannot categorize in a single group
     others:
       patterns:
