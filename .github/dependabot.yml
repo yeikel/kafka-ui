@@ -89,6 +89,9 @@ updates:
     lucene:
       patterns:
         - "org.apache.lucene:*"
+      update-types:
+        - "patch"
+        - "minor"
     others:
       patterns:
         - "*"
