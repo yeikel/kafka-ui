@@ -25,15 +25,22 @@ updates:
         - "patch"
         - "minor"
     # Update test dependencies separately
-    dev-dependencies:
-      # TODO: Consider using dependency-type if https://github.com/dependabot/dependabot-core/issues/13122 is fixed
+    test-dev-dependencies:
       patterns:
         - "org.testcontainers:*"
         - "org.mockito:*"
         - "org.junit.jupiter:*"
         - "org.assertj:*"
-        - "org.sonarqube:*"
-        - "com.gorylenko.gradle-git-properties:*"
+        - "com.gorylenko.gradle-git-properties*"
+    openapi-json-dependencies:
+      patterns:
+        - "org.openapitools:*"
+        - "com.github.java-json-tools:*"
+        - "com.github.victools:*"
+    cloud-auth-dependencies:
+      patterns:
+        - "com.google.cloud.hosted.kafka:*"
+        - "com.google.oauth-client:*"
     # Update Apache Commons libraries together
     # These dependencies rarely introduce breaking changes
     # And it is safe to update them together without restrictions at the minor/patch level
@@ -48,14 +55,13 @@ updates:
       update-types:
         - "patch"
         - "minor"
-    json-schema-dependencies:
+    openapi-dependencies:
       patterns:
         - "com.github.victools:jsonschema-generator"
         - "com.github.java-json-tools:json-schema-validator"
         - "org.openapitools.openapistylevalidator:*"
         - "org.openapi.generator:*"
         - "io.swagger.core.v3:*"
-        - "jakarta.annotation:jakarta.annotation-api"
 - package-ecosystem: docker
   directory: "/api"
   schedule:
