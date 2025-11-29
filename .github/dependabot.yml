@@ -47,8 +47,6 @@ updates:
         - "com.gorylenko.gradle-git-properties"
         - "com.bmuschko.docker-remote-api"
         - "org.mockito:*"
-        # Byte Buddy is primarily used for testing in libraries like Mockito
-        - "net.bytebuddy:byte-buddy"
         # Bouncy Castle is only used for testing purposes in our project
         - "org.bouncycastle:bcpkix-jdk18on"
     devtools:
