@@ -65,10 +65,6 @@ updates:
       patterns:
         - "org.apache.kafka:*"
         - "io.confluent:*"
-      # Kafka major upgrades generally require more work due to breaking changes
-      #update-types:
-      #  - "patch"
-      #  - "minor"
     schema-tools:
       patterns:
         - "com.github.victools:jsonschema-generator"
@@ -88,6 +84,9 @@ updates:
     gradle-wrapper:
       patterns:
         - "gradle-wrapper"
+      update-types:
+        - "patch"
+        - "minor"
     others:
       patterns:
         - "*"
