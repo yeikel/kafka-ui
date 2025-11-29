@@ -29,6 +29,7 @@ updates:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
+        - "io.prometheus:*"
       # We will handle major upgrades manually
       update-types:
         - "patch"
