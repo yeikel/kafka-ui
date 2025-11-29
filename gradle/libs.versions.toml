@@ -12,14 +12,14 @@ apache-datasketches = '3.1.0'
 apache-commons-compress = '1.26.0'
 
 assertj = '3.25.3'
-avro = '1.11.4'
+avro = '1.12.1'
 byte-buddy = '1.18.1'
 confluent = '7.9.2'
 confluent-ccs = '7.9.0-ccs'
 
-mapstruct = '1.6.2'
+mapstruct = '1.6.3'
 lombok = '1.18.42'
-odd-oddrn-generator = '0.1.17'
+odd-oddrn-generator = '0.1.21'
 odd-oddrn-client = '0.1.41'
 cel = '0.3.0'
 # This version should be compatible with the version used by spring-boot-starter-test to avoid conflicts
@@ -94,7 +94,7 @@ micrometer-registry-prometheus = { module = 'io.micrometer:micrometer-registry-p
 antlr = { module = 'org.antlr:antlr4', version.ref = 'antlr' }
 antlr-runtime = { module = 'org.antlr:antlr4-runtime', version.ref = 'antlr' }
 cel = { module = 'dev.cel:cel', version.ref = 'cel' }
-caffeine = { module = 'com.github.ben-manes.caffeine:caffeine', version = '3.2.2'}
+caffeine = { module = 'com.github.ben-manes.caffeine:caffeine', version = '3.2.3'}
 
 testcontainers = { module = 'org.testcontainers:testcontainers', version.ref = 'testcontainers' }
 testcontainers-kafka = { module = 'org.testcontainers:kafka', version.ref = 'testcontainers' }
