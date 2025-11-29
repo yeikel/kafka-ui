@@ -34,7 +34,7 @@ updates:
         - "patch"
         - "minor"
     # Update test dependencies separately
-    test-dev-dependencies:
+    test-dependencies:
       patterns:
         - "org.testcontainers:*"
         - "org.junit.jupiter:*"
