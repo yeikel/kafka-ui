@@ -24,7 +24,7 @@ updates:
       # We will only update this dependency if it is necessary for security fixes
     - dependency-name: com.nimbusds:nimbus-jose-jwt
   groups:
-    springboot:
+    spring-boot:
       patterns:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
