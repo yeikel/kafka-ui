@@ -28,9 +28,6 @@ updates:
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
         # The only reason we defined this explicitly is that Spring uses an older version
         - "com.nimbusds:nimbus-jose-jwt"
-      update-types:
-        - "patch"
-        - "minor"
     # Update test dependencies separately
     test-libraries:
       # TODO: Consider using dependency-type when https://github.com/dependabot/dependabot-core/issues/13122 is supported
@@ -68,21 +65,12 @@ updates:
     lucene:
       patterns:
         - "org.apache.lucene:*"
-      update-types:
-        - "patch"
-        - "minor"
     gradle-wrapper:
       patterns:
         - "gradle-wrapper"
-      update-types:
-        - "patch"
-        - "minor"
     others:
       patterns:
         - "*"
-      update-types:
-        - "patch"
-        - "minor"
 - package-ecosystem: docker
   directory: "/api"
   schedule:
