@@ -32,7 +32,6 @@ updates:
         - "org.mockito:*"
         - "org.junit.jupiter:*"
         - "org.assertj:*"
-        -
       update-types:
         - "minor"
         - "patch"
