@@ -22,7 +22,6 @@ updates:
       update-types:
         - "version-update:semver-major"
       # We will only update this dependency if it is necessary for security fixes
-    - dependency-name: com.nimbusds:nimbus-jose-jwt
   groups:
     spring-boot:
       patterns:
@@ -31,6 +30,8 @@ updates:
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
         - "io.prometheus:*"
         - "org.projectlombok:lombok"
+        # We defined this dependency explicitly to fix a vulnerability in a transitive dependency brought by Spring Boot
+        - "com.nimbusds:nimbus-jose-jwt"
       # We will handle major upgrades manually
       update-types:
         - "patch"
