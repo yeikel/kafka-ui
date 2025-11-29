@@ -58,12 +58,6 @@ updates:
         - "com.github.java-json-tools:*"
         - "com.github.victools:*"
         - "org.sonarqube"
-    cloud-auth:
-      patterns:
-        - "com.google.cloud.hosted.kafka:*"
-        - "com.google.oauth-client:*"
-        - "com.azure:azure-identity"
-        - "software.amazon.msk:aws-msk-iam-auth"
     # Update Apache Commons libraries together
     # These dependencies rarely introduce breaking changes
     # And it is safe to update them together without restrictions at the minor/patch level
