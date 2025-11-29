@@ -11,9 +11,9 @@ apache-commons-pool2 = '2.12.1'
 apache-datasketches = '3.1.0'
 apache-commons-compress = '1.26.0'
 
-assertj = '3.25.3'
+assertj = '3.27.6'
 avro = '1.11.4'
-byte-buddy = '1.18.1'
+byte-buddy = '1.18.2'
 confluent = '7.9.2'
 confluent-ccs = '7.9.0-ccs'
 
@@ -24,10 +24,10 @@ odd-oddrn-client = '0.1.41'
 cel = '0.3.0'
 # This version should be compatible with the version used by spring-boot-starter-test to avoid conflicts
 # See https://github.com/spring-projects/spring-boot/blob/b6b570ebebb6ea233e00af5e554adcf40256f224/gradle.properties#L16C21-L16C27
-junit = '5.12.2'
+junit = '6.0.1'
 mockito = '5.20.0'
 okhttp3 = '4.12.0'
-testcontainers = '1.20.6'
+testcontainers = '1.21.3'
 swagger-integration-jakarta = '2.2.27'
 jakarta-annotation-api = '2.1.1'
 jackson-databind-nullable = '0.2.6'
@@ -41,13 +41,13 @@ lucene = '10.2.2'
 [plugins]
 spring-boot = { id = 'org.springframework.boot', version.ref = 'spring-boot' }
 spring-dependency-management = { id = 'io.spring.dependency-management', version = '1.1.7' }
-git-properties = { id = 'com.gorylenko.gradle-git-properties', version = '2.5.3' }
+git-properties = { id = 'com.gorylenko.gradle-git-properties', version = '2.5.4' }
 openapi-validator = {id = "org.openapitools.openapistylevalidator", version = "1.09" }
 openapi-generator = { id = 'org.openapi.generator', version = '7.12.0' }
 nexus-publish-plugin = { id = 'io.github.gradle-nexus.publish-plugin', version = '1.1.0' }
 node-gradle = { id = 'com.github.node-gradle.node', version = '7.1.0' }
-docker-remote-api = { id = 'com.bmuschko.docker-remote-api', version = '9.4.0' }
-sonarqube = { id = "org.sonarqube", version = "6.0.1.5171" }
+docker-remote-api = { id = 'com.bmuschko.docker-remote-api', version = '10.0.0' }
+sonarqube = { id = "org.sonarqube", version = "7.1.0.6387" }
 
 
 [libraries]
@@ -117,7 +117,7 @@ assertj = { module = 'org.assertj:assertj-core', version.ref = 'assertj' }
 jsonschemavalidator = { module = 'com.github.java-json-tools:json-schema-validator', version.ref = 'json-schema-validator' }
 
 # test scope
-bouncycastle-bcpkix = { module = 'org.bouncycastle:bcpkix-jdk18on', version = '1.80' }
+bouncycastle-bcpkix = { module = 'org.bouncycastle:bcpkix-jdk18on', version = '1.83' }
 
 # Google Managed Service for Apache Kafka support
 google-managed-kafka-login-handler = {module = 'com.google.cloud.hosted.kafka:managed-kafka-auth-login-handler', version = '1.0.5'}
