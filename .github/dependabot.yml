@@ -32,7 +32,6 @@ updates:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
-        - "org.projectlombok:lombok"
         # The only reason we defined this explicitly is that Spring uses an older version
         - "com.nimbusds:nimbus-jose-jwt"
       update-types:
