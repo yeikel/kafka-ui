@@ -17,13 +17,7 @@ updates:
     # In general, having conflicting Netty versions in the classpath is not recommended
     - dependency-name: "io.netty:*"
     # We will handle major upgrades manually
-    - dependency-name: org.springframework.boot:*
-      update-types:
-        - "version-update:semver-major"
-    - dependency-name: org.apache.kafka:*
-      update-types:
-        - "version-update:semver-major"
-    - dependency-name: io.confluent:*
+    - dependency-name: *
       update-types:
         - "version-update:semver-major"
   groups:
