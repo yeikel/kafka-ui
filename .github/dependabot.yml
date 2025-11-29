@@ -7,7 +7,6 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 10
   labels:
     - "type/dependencies"
     - "scope/backend"
@@ -25,7 +24,32 @@ updates:
       update-types:
         - "patch"
         - "minor"
+    # Update test dependencies separately
+    test-dependencies:
+      dependency-type: "development"
+      update-types:
+        - "minor"
+        - "patch"
+    # Update Apache Commons libraries together
+    # These dependencies rarely introduce breaking changes
+    # And it is safe to update them together without restrictions at the minor/patch level
+    apache-commons-dependencies:
+      patterns:
+        - "org.apache.commons:*"
+    kafka-dependencies:
+      patterns:
+        - "org.apache.kafka:*"
+        - "io.confluent:*"
+    json-schema-dependencies:
+      patterns:
+        - "com.github.victools:jsonschema-generator"
+        - "com.github.java-json-tools:json-schema-validator"
+        - "org.openapitools.openapistylevalidator:*"
+        - "org.openapi.generator:*"
+        - "io.swagger.core.v3:*"
+        - "jakarta.annotation:jakarta.annotation-api"
     other-dependencies:
+      # Exclude Spring Boot dependencies from this group ensure they are only updated via the spring-boot-dependencies group
       exclude-patterns:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
@@ -43,6 +67,7 @@ updates:
     timezone: Europe/London
   open-pull-requests-limit: 10
   ignore:
+    # We handle Major Java updates manually
   - dependency-name: "azul/zulu-openjdk-alpine"
     update-types: ["version-update:semver-major"]
   labels:
@@ -74,7 +99,10 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 10
+  groups:
+    github-actions:
+      patterns:
+        - "*"
   labels:
     - "type/dependencies"
     - "scope/infra"
