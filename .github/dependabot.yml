@@ -16,9 +16,8 @@ updates:
     # In general, our Netty references are temporary overrides, usually applied to address transitive Spring vulnerabilities, and should be configured with caution
     # In general, having conflicting Netty versions in the classpath is not recommended
     - dependency-name: "io.netty:*"
-    # We handle Major Spring Boot upgrades manually
-    # We do not need to list the individual Spring Boot dependencies here as they are managed by a single property in the build
-    - dependency-name: "org.springframework.boot:spring-boot-starter-actuator"
+    # We will handle major Spring Boot upgrades manually as breaking changes are expected
+    - dependency-name: org.springframework.boot:*
       update-types:
         - "version-update:semver-major"
       # We will only update this dependency if it is necessary for security fixes
