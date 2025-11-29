@@ -39,7 +39,7 @@ updates:
         - "patch"
         - "minor"
     # Update test dependencies separately
-    testing:
+    test-libraries:
       # TODO: Consider using dependency-type when https://github.com/dependabot/dependabot-core/issues/13122 is supported
       patterns:
         - "org.testcontainers:*"
