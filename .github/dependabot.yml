@@ -28,7 +28,6 @@ updates:
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
         # The only reason we defined this explicitly is that Spring uses an older version
         - "com.nimbusds:nimbus-jose-jwt"
-    # Update test dependencies separately
     test-libraries:
       # TODO: Consider using dependency-type when https://github.com/dependabot/dependabot-core/issues/13122 is supported
       patterns:
