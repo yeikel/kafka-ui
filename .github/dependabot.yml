@@ -92,6 +92,7 @@ updates:
       update-types:
         - "patch"
         - "minor"
+    # Group all other dependencies we cannot categorize in a single group
     others:
       patterns:
         - "*"
