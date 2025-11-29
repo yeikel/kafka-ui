@@ -103,7 +103,7 @@ updates:
     interval: weekly
     time: "10:00"
     timezone: Europe/London
-  open-pull-requests-limit: 0
+  open-pull-requests-limit: 10
   ignore:
     # We handle Major Java updates manually
   - dependency-name: "azul/zulu-openjdk-alpine"
