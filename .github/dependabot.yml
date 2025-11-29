@@ -24,7 +24,7 @@ updates:
       # We will only update this dependency if it is necessary for security fixes
     - dependency-name: com.nimbusds:nimbus-jose-jwt
   groups:
-    spring-boot-dependencies:
+    spring-boot:
       patterns:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
@@ -34,7 +34,7 @@ updates:
         - "patch"
         - "minor"
     # Update test dependencies separately
-    test-dependencies:
+    test:
       patterns:
         - "org.testcontainers:*"
         - "org.junit.jupiter:*"
@@ -46,12 +46,12 @@ updates:
         - "net.bytebuddy:byte-buddy"
         # Bouncy Castle is only used for testing purposes in our project
         - "org.bouncycastle:bcpkix-jdk18on"
-    openapi-json-dependencies:
+    openapi-json:
       patterns:
         - "org.openapitools:*"
         - "com.github.java-json-tools:*"
         - "com.github.victools:*"
-    cloud-auth-dependencies:
+    cloud-auth:
       patterns:
         - "com.google.cloud.hosted.kafka:*"
         - "com.google.oauth-client:*"
@@ -60,10 +60,10 @@ updates:
     # Update Apache Commons libraries together
     # These dependencies rarely introduce breaking changes
     # And it is safe to update them together without restrictions at the minor/patch level
-    apache-dependencies:
+    apache:
       patterns:
         - "org.apache*"
-    kafka-dependencies:
+    kafka:
       patterns:
         - "org.apache.kafka:*"
         - "io.confluent:*"
@@ -71,7 +71,7 @@ updates:
       update-types:
         - "patch"
         - "minor"
-    openapi-dependencies:
+    openapi:
       patterns:
         - "com.github.victools:jsonschema-generator"
         - "com.github.java-json-tools:json-schema-validator"
