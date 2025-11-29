@@ -52,17 +52,6 @@ updates:
         - "org.openapi.generator:*"
         - "io.swagger.core.v3:*"
         - "jakarta.annotation:jakarta.annotation-api"
-    other-dependencies:
-      # Exclude Spring Boot dependencies from this group ensure they are only updated via the spring-boot-dependencies group
-      exclude-patterns:
-        - "org.springframework.boot:*"
-        - "io.spring.dependency-management"
-      patterns:
-        - "*"
-      update-types:
-        - "patch"
-        - "minor"
-
 - package-ecosystem: docker
   directory: "/api"
   schedule:
