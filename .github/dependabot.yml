@@ -26,7 +26,13 @@ updates:
         - "minor"
     # Update test dependencies separately
     test-dependencies:
-      dependency-type: "development"
+      # TODO: Consider using dependency-type if https://github.com/dependabot/dependabot-core/issues/13122 is fixed
+      patterns:
+        - "org.testcontainers:*"
+        - "org.mockito:*"
+        - "org.junit.jupiter:*"
+        - "org.assertj:*"
+        -
       update-types:
         - "minor"
         - "patch"
