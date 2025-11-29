@@ -17,7 +17,7 @@ updates:
     # In general, having conflicting Netty versions in the classpath is not recommended
     - dependency-name: "io.netty:*"
     # We will handle major upgrades manually
-    - dependency-name: *
+    - dependency-name: "*"
       update-types:
         - "version-update:semver-major"
   groups:
