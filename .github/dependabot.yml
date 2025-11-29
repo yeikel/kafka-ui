@@ -67,7 +67,7 @@ updates:
         - "com.github.victools:jsonschema-generator"
         - "com.github.java-json-tools:json-schema-validator"
         - "org.openapitools.openapistylevalidator:*"
-        - "org.openapi.generator:*"
+        - "org.openapi.generator"
         - "io.swagger.core.v3:*"
     others:
       patterns:
