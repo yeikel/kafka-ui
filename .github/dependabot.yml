@@ -32,7 +32,7 @@ updates:
         - "io.spring.dependency-management"
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
         - "org.projectlombok:lombok"
-        # We defined this dependency explicitly to fix a vulnerability in a transitive dependency brought by Spring Boot
+        # The only reason we defined this explicitly was to fix a transitive vulnerability from Spring
         - "com.nimbusds:nimbus-jose-jwt"
       update-types:
         - "patch"
