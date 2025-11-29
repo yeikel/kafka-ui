@@ -25,7 +25,7 @@ updates:
         - "patch"
         - "minor"
     # Update test dependencies separately
-    test-dependencies:
+    dev-dependencies:
       # TODO: Consider using dependency-type if https://github.com/dependabot/dependabot-core/issues/13122 is fixed
       patterns:
         - "org.testcontainers:*"
@@ -33,6 +33,7 @@ updates:
         - "org.junit.jupiter:*"
         - "org.assertj:*"
         - "org.sonarqube:*"
+        - "com.gorylenko.gradle-git-properties:*"
     # Update Apache Commons libraries together
     # These dependencies rarely introduce breaking changes
     # And it is safe to update them together without restrictions at the minor/patch level
