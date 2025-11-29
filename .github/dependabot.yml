@@ -44,6 +44,8 @@ updates:
         - "org.mockito:*"
         # Byte Buddy is primarily used for testing purposes in tools like Mockito
         - "net.bytebuddy:byte-buddy"
+        # Bouncy Castle is only used for testing purposes in our project
+        - "org.bouncycastle:bcpkix-jdk18on"
     openapi-json-dependencies:
       patterns:
         - "org.openapitools:*"
