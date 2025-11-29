@@ -79,11 +79,9 @@ updates:
         - "org.openapitools.openapistylevalidator"
         - "org.openapi.generator"
         - "io.swagger.core.v3:*"
-    # Cel is a special case - we only want to handle it separately
     cel:
       patterns:
         - "dev.cel:cel"
-    # Lucene is a special case - we only want to handle it separately
     lucene:
       patterns:
         - "org.apache.lucene:*"
