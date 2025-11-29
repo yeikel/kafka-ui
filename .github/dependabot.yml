@@ -21,6 +21,8 @@ updates:
     - dependency-name: "org.springframework.boot:spring-boot-starter-actuator"
       update-types:
         - "version-update:semver-major"
+      # We will only update this dependency if it is necessary for security fixes
+    - dependency-name: com.nimbusds:nimbus-jose-jwt
   groups:
     spring-boot-dependencies:
       patterns:
