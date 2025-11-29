@@ -35,7 +35,7 @@ updates:
         - "patch"
         - "minor"
     # Update test dependencies separately
-    test:
+    dev:
       patterns:
         - "org.testcontainers:*"
         - "org.junit.jupiter:*"
@@ -47,6 +47,7 @@ updates:
         - "net.bytebuddy:byte-buddy"
         # Bouncy Castle is only used for testing purposes in our project
         - "org.bouncycastle:bcpkix-jdk18on"
+        - "org.sonarqube"
     openapi-json:
       patterns:
         - "org.openapitools:*"
