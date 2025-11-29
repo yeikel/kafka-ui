@@ -74,7 +74,7 @@ updates:
       update-types:
         - "patch"
         - "minor"
-    openapi:
+    schema-tools:
       patterns:
         - "com.github.victools:jsonschema-generator"
         - "com.github.java-json-tools:json-schema-validator"
