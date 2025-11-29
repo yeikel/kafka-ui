@@ -85,6 +85,10 @@ updates:
     cel:
       patterns:
         - "dev.cel:cel"
+    # Lucene is a special case - we only want to handle it separately
+    lucene:
+      patterns:
+        - "org.apache.lucene:*"
     others:
       patterns:
         - "*"
