@@ -2,8 +2,8 @@
 spring-boot = '3.5.7'
 nimbus-jose-jwt = '10.0.2'
 
-aws-msk-auth = '2.3.0'
-azure-identity = '1.15.4'
+aws-msk-auth = '2.3.5'
+azure-identity = '1.18.1'
 
 apache-commons-lang3 = '3.18.0'
 apache-commons-text = '1.13.1'
@@ -120,7 +120,7 @@ jsonschemavalidator = { module = 'com.github.java-json-tools:json-schema-validat
 bouncycastle-bcpkix = { module = 'org.bouncycastle:bcpkix-jdk18on', version = '1.80' }
 
 # Google Managed Service for Apache Kafka support
-google-managed-kafka-login-handler = {module = 'com.google.cloud.hosted.kafka:managed-kafka-auth-login-handler', version = '1.0.5'}
+google-managed-kafka-login-handler = {module = 'com.google.cloud.hosted.kafka:managed-kafka-auth-login-handler', version = '1.0.6'}
 google-oauth-client = { module = 'com.google.oauth-client:google-oauth-client', version = '1.39.0' }
 
 modelcontextprotocol-spring-webflux = {module = 'io.modelcontextprotocol.sdk:mcp-spring-webflux', version = '0.10.0'}
