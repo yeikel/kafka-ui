@@ -57,7 +57,7 @@ updates:
         - "org.sonarqube"
     # Update Apache Commons libraries together
     # These dependencies rarely introduce breaking changes
-    # And it is safe to update them together without restrictions at the minor/patch level
+    # And it is safe to update them together without restrictions
     apache-commons:
       patterns:
         - "org.apache.commons:*"
