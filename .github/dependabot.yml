@@ -72,9 +72,6 @@ updates:
         - "org.openapitools.openapistylevalidator"
         - "org.openapi.generator"
         - "io.swagger.core.v3:*"
-    cel:
-      patterns:
-        - "dev.cel:cel"
     lucene:
       patterns:
         - "org.apache.lucene:*"
