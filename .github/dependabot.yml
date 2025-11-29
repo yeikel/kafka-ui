@@ -24,12 +24,13 @@ updates:
       # We will only update this dependency if it is necessary for security fixes
     - dependency-name: com.nimbusds:nimbus-jose-jwt
   groups:
-    spring-boot:
+    springboot:
       patterns:
         - "org.springframework.boot:*"
         - "io.spring.dependency-management"
         - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
         - "io.prometheus:*"
+        - "org.projectlombok:lombok"
       # We will handle major upgrades manually
       update-types:
         - "patch"
