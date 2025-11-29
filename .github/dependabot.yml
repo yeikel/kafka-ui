@@ -37,11 +37,13 @@ updates:
     test-dev-dependencies:
       patterns:
         - "org.testcontainers:*"
-        - "org.mockito:*"
         - "org.junit.jupiter:*"
         - "org.assertj:*"
         - "com.gorylenko.gradle-git-properties"
         - "com.bmuschko.docker-remote-api"
+        - "org.mockito:*"
+        # Byte Buddy is primarily used for testing purposes in tools like Mockito
+        - "net.bytebuddy:byte-buddy"
     openapi-json-dependencies:
       patterns:
         - "org.openapitools:*"
@@ -74,6 +76,10 @@ updates:
         - "org.openapitools.openapistylevalidator"
         - "org.openapi.generator"
         - "io.swagger.core.v3:*"
+    # Cel is a special case - we only want to handle it separately
+    cel:
+      patterns:
+        - "dev.cel:cel"
     others:
       patterns:
         - "*"
