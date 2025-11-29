@@ -64,9 +64,6 @@ updates:
     lucene:
       patterns:
         - "org.apache.lucene:*"
-    gradle-wrapper:
-      patterns:
-        - "gradle-wrapper"
     others:
       patterns:
         - "*"
