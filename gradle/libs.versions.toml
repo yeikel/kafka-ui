@@ -124,7 +124,7 @@ google-managed-kafka-login-handler = {module = 'com.google.cloud.hosted.kafka:ma
 google-oauth-client = { module = 'com.google.oauth-client:google-oauth-client', version = '1.39.0' }
 
 modelcontextprotocol-spring-webflux = {module = 'io.modelcontextprotocol.sdk:mcp-spring-webflux', version = '0.10.0'}
-victools-jsonschema-generator = {module = 'com.github.victools:jsonschema-generator', version = '4.38.0'}
+victools-jsonschema-generator = {module = 'com.github.victools:jsonschema-generator', version = '4.37.0'}
 
 prometheus-metrics-core = {module = 'io.prometheus:prometheus-metrics-core', version.ref = 'prometheus'}
 prometheus-metrics-textformats = { module = 'io.prometheus:prometheus-metrics-exposition-textformats', version.ref = 'prometheus'}
