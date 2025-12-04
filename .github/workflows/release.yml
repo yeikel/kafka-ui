@@ -43,7 +43,7 @@ jobs:
           -Pversion=$version
 
       - name: Upload files to a GitHub release
-        uses: svenstaro/upload-release-action@04733e069f2d7f7f0b4aebc4fbdbce8613b03ccd # infered from @v2.9.0
+        uses: svenstaro/upload-release-action@6b7fa9f267e90b50a19fef07b3596790bb941741 # infered from @v2.11.3
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: api/build/libs/api-${{ steps.build.outputs.version }}.jar
