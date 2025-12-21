@@ -13,7 +13,7 @@ apache-commons-compress = '1.28.0'
 
 assertj = '3.25.3'
 avro = '1.11.4'
-byte-buddy = '1.18.1'
+byte-buddy = '1.18.3'
 confluent = '7.9.5'
 confluent-ccs = '7.9.5-ccs'
 
