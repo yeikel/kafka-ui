@@ -14,10 +14,8 @@ updates:
   groups:
     gradle-wrapper:
       patterns:
-        - "gradle-wrapper*"
-    others:
-      patterns:
-        - "*"
+        - "gradle-wrapper"
+    
 - package-ecosystem: docker
   directory: "/api"
   schedule:
