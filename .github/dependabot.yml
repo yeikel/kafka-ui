@@ -21,53 +21,9 @@ updates:
       update-types:
         - "version-update:semver-major"
   groups:
-    spring-boot-dependencies:
-      patterns:
-        - "org.springframework.boot:*"
-        - "io.spring.dependency-management"
-        # We defined this dependency explicitly because Spring uses an older version
-        - "com.nimbusds:nimbus-jose-jwt"
-    testing:
-      # TODO: Consider using dependency-type when https://github.com/dependabot/dependabot-core/issues/13122 is supported
-      patterns:
-        - "org.testcontainers:*"
-        - "org.junit.jupiter:*"
-        - "org.assertj:*"
-        - "com.bmuschko.docker-remote-api"
-        - "org.mockito:*"
-        # Bouncy Castle is only used for testing purposes
-        - "org.bouncycastle:bcpkix-jdk18on"
-    api-build-tools:
-      patterns:
-        - "org.openapitools:*"
-        - "com.github.java-json-tools:*"
-        - "com.github.victools:*"
-    # Update Apache Commons libraries together as these dependencies rarely introduce breaking changes
-    apache-commons:
-      patterns:
-        - "org.apache.commons:*"
-    kafka:
-      patterns:
-        - "org.apache.kafka:*"
-        - "io.confluent:*"
-    schema-tools:
-      patterns:
-        - "com.github.victools:jsonschema-generator"
-        - "com.github.java-json-tools:json-schema-validator"
-        - "org.openapitools.openapistylevalidator"
-        - "org.openapi.generator"
-        - "io.swagger.core.v3:*"
-    lucene:
-      patterns:
-        - "org.apache.lucene:*"
-    # This dependency is in the 0.x stage and may introduce breaking changes in minor/patch releases
-    # We group it separately to avoid blocking updates in the 'others' group
-    modelcontextprotocol:
-      patterns:
-        - "io.modelcontextprotocol.sdk:mcp-spring-webflux"
     gradle-wrapper:
       patterns:
-        - "gradle-wrapper"
+        - "gradle-wrapper*"
     others:
       patterns:
         - "*"
